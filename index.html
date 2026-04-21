@@ -4,19 +4,40 @@
 <title>Happy Birthday Kayra</title>
 <style>
 body{
-background:linear-gradient(to right,pink,#ff66b2);
-text-align:center;
+margin:0;
+overflow:hidden;
+background:linear-gradient(45deg,#ff4da6,#ff99cc);
 font-family:Arial;
-padding-top:100px;
+text-align:center;
 color:white;
 }
 h1{
-font-size:55px;
-margin-bottom:20px;
+margin-top:100px;
+font-size:60px;
+animation:zoom 2s infinite alternate;
 }
 p{
 font-size:28px;
-margin:10px;
+margin:12px;
+}
+.small{
+font-size:22px;
+margin-top:30px;
+font-style:italic;
+}
+.balloon{
+position:absolute;
+bottom:-100px;
+font-size:40px;
+animation:float 8s linear infinite;
+}
+@keyframes float{
+0%{transform:translateY(0);}
+100%{transform:translateY(-110vh);}
+}
+@keyframes zoom{
+from{transform:scale(1);}
+to{transform:scale(1.15);}
 }
 </style>
 </head>
@@ -24,13 +45,17 @@ margin:10px;
 
 <h1>🎉 Happy Birthday Kayra 🎂</h1>
 
-<p>Today is special because you were born ❤️</p>
+<p>Wishing you happiness, joy and beautiful moments today ❤️</p>
 
-<p>Wishing you happiness, joy, success and beautiful moments always.</p>
+<p>Enjoy your special day 😊</p>
 
-<p>Enjoy your day Kayra 😊</p>
+<p class="small">From someone who thinks you are amazing 🌹</p>
 
-<p>From someone who thinks you're amazing 🌹</p>
+<div class="balloon" style="left:10%;">🎈</div>
+<div class="balloon" style="left:30%;animation-delay:2s;">🎈</div>
+<div class="balloon" style="left:50%;animation-delay:4s;">🎈</div>
+<div class="balloon" style="left:70%;animation-delay:1s;">🎈</div>
+<div class="balloon" style="left:90%;animation-delay:3s;">🎈</div>
 
 </body>
 </html>
